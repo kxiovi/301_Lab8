@@ -27,11 +27,11 @@ public class CountCitiesTest {
         assertEquals(0, list.countCities());
         list.addCity(city);
         assertTrue(list.hasCity(city)); // list does have city
-        assertEquals(1, countCities());
+        assertEquals(1, list.countCities());
         list.deleteCity(city);
         assertFalse(list.hasCity(city));  // list has 0 cities
         list.addCity(new City ("Vancouver", "BC"));
         list.addCity(new City("Edmonton", "AB"));
-        assertEquals(2, countCities());
+        assertEquals(2, list.countCities());
     }
 }
